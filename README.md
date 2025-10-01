@@ -68,6 +68,3 @@
 - pandas and numpy for wrangling
 - JupyterLab for scripting
 
----
-
-**This README is suitable for GitHub or similar platforms. Update repository name and details if expanding features or data sources.**
