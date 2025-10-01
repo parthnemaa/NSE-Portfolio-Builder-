@@ -1,55 +1,73 @@
 # Portfolio Creation Using Equal Weight Strategy
 
-A Jupyter notebook to build and manage an equal weights portfolio with India’s top 50 stocks by market capitalization. Fetches real-time data, recommends optimal share distribution for any investment amount, and is suited for investors and finance students.
+**A Jupyter notebook to build and manage an equal weights portfolio with India’s top 50 stocks by market capitalization. Fetches real-time data, recommends optimal share distribution for any investment amount, and is suited for investors and finance students.**
 
-Project Purpose
-The main objective is to help users easily construct a diversified equity portfolio comprising India’s top listed companies based on market capitalization. This tool provides a step-by-step workflow from data loading to allocation, making it suitable for beginner investors, finance students, and professionals needing quick prototyping of allocation strategies.
+---
 
-Features
-Loads a list of top 50 Indian stocks with ticker, company name, market capitalization, and latest trading price.
-Automatically sorts stocks by market capitalization to identify leaders for portfolio inclusion.
-Calculates the number of shares to purchase for each stock according to a user-defined investment amount using the equal-weight allocation method.
-Uses Python, pandas, numpy, and yfinance for data import, manipulation, and retrieval; also supports visualization of allocations.
+**Project Purpose**
+- **Helps construct diversified portfolios with India’s top listed companies by market capitalization.**
+- **Ideal for beginner investors, finance students, and professionals prototyping equity allocation strategies.**
 
-How It Works:
-Initial Setup: Import required Python libraries and load stock data from CSV or via yfinance.
-Data Processing: Sort stocks by market capitalization and extract the top selections for user analysis.
-Allocation Calculation: User enters desired investment amount; the tool computes how many shares to buy for each stock to achieve equal allocation.
-Results Visualization: Tables and outputs summarize the recommended share purchases and allocation breakdowns.
+---
 
-Requirements:
+**Features**
+- **Loads top 50 Indian stocks with ticker, company name, market cap, and latest price.**
+- **Sorts stocks by market capitalization for portfolio inclusion.**
+- **Calculates optimal shares to buy for a given investment using equal-weight allocation.**
+- **Uses Python, pandas, numpy, and yfinance for data handling and retrieval.**
 
-Python 3.6+ (tested with Python 3.13.1)
-pandas
-numpy
-yfinance
+---
 
-Getting Started
-Clone the repository and open Portfolio.ipynb in Jupyter.
-Run cells to load the stock list and process the data.
-Input the total amount to allocate when prompted.
-View allocation outputs and summary tables for actionable investment guidance.
+**How It Works**
+- **Initial Setup:** Import libraries and load data (CSV or yfinance).
+- **Data Processing:** Sort by market capitalization.
+- **Allocation Calculation:** User enters investment; computes shares per stock for equal allocation.
+- **Results Visualization:** View summary tables of share purchases and allocations.
 
-Example Usage
-Load the list of Nifty constituent stocks.
-Input that the planned investment is ₹1,00,000.
-The script will output a breakdown showing suggested share count for each stock, optimizing capital usage and diversification.
+---
 
-Who Should Use This Project
-Finance students learning about portfolio construction, allocation strategies, and Indian equity markets.
-Individual investors and hobbyists wanting guided, data-driven portfolio decisions.
-Researchers/professionals testing equal-weight approaches on local market data.
+**Requirements**
+- Python 3.6+ (tested with Python 3.13.1)
+- pandas
+- numpy
+- yfinance
 
-Extending the Project
-Potential future enhancements:
+---
 
-Support for different weighting schemes (market cap, volatility).
-Integration with APIs for live stock price updates.
-Automated portfolio rebalancing features.
+**Getting Started**
+- **Clone the repository and open Portfolio.ipynb in Jupyter.**
+- **Run the cells to load and process stock data.**
+- **Input total amount to allocate.**
+- **View recommended share counts and allocation breakdown.**
 
-Acknowledgements
-yfinance for market data.
-pandas and numpy for data wrangling.
-JupyterLab for interactive scripting.
+---
 
-This README is suitable for direct use on GitHub or similar platforms. Please update the repository name and adjust details if integrating additional features or data sources
+**Example Usage**
+- **Load Nifty constituent stocks.**
+- **Enter investment (e.g., ₹1,00,000).**
+- **Script recommends shares per stock for optimal diversification.**
+
+---
+
+**Who Should Use This Project**
+- Finance students studying portfolio construction.
+- Investors seeking guided allocation strategies.
+- Researchers/professionals testing equal-weight methods on Indian market data.
+
+---
+
+**Extending the Project**
+- Support weighting by market cap or volatility.
+- Integrate live price APIs.
+- Add portfolio rebalancing.
+
+---
+
+**Acknowledgements**
+- yfinance for data
+- pandas and numpy for wrangling
+- JupyterLab for scripting
+
+---
+
+**This README is suitable for GitHub or similar platforms. Update repository name and details if expanding features or data sources.**
