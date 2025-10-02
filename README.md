@@ -1,70 +1,70 @@
-# Portfolio Creation Using Equal Weight Strategy
+# NSE Portfolio Builder
 
-**A Jupyter notebook to build and manage an equal weights portfolio with India’s top 50 stocks by market capitalization. Fetches real-time data, recommends optimal share distribution for any investment amount, and is suited for investors and finance students.**
+An advanced Python project that builds an equal-weight portfolio using dynamic Indian stock data from NSE. Leveraging the `nsepython` package and Yahoo Finance (`yfinance`), it fetches real-time NSE stock symbols, fundamental data, and dynamically selects a top 50 universe by market capitalization.
 
----
+## Features
 
-**Project Purpose**
-- **Helps construct diversified portfolios with India’s top listed companies by market capitalization.**
-- **Ideal for beginner investors, finance students, and professionals prototyping equity allocation strategies.**
+- **Dynamic NSE Symbol Fetching:** Uses `nsepython` to get current NSE equity symbols without manual updates.
+- **Live Stock Fundamentals:** Retrieves updated prices, market caps, P/E ratios, dividend yields from Yahoo Finance.
+- **Market Cap Based Selection:** Selects top 50 stocks by market capitalization for portfolio inclusion.
+- **Equal Weight Allocation:** Efficient calculation of shares to buy for any user-specified investment amount.
+- **Enhanced Visualizations:**
+  
+  - Stylish DataFrame tables with color-coded key metrics.
+  - Interactive Plotly bar charts for share allocations.
+  - Animated matplotlib charts for share buy recommendations.
+  - 
+- **User Friendly:** Validates user input and formats all financial numbers with Indian Rupee formatting and percentages.
+- **Notebook Ready:** Designed for smooth execution and display in Jupyter Notebooks.
 
----
+## Installation
+pip install nsepython yfinance pandas matplotlib plotly
 
-**Features**
-- **Loads top 50 Indian stocks with ticker, company name, market cap, and latest price.**
-- **Sorts stocks by market capitalization for portfolio inclusion.**
-- **Calculates optimal shares to buy for a given investment using equal-weight allocation.**
-- **Uses Python, pandas, numpy, and yfinance for data handling and retrieval.**
+## Usage
+1. Clone this repository:
+git clone https://github.com/yourusername/nse-portfolio-builder.git
+cd nse-portfolio-builder
 
----
+2. Open the Jupyter Notebook `Portfolio.ipynb` or run the script.
+3. Follow notebook cells to:
+4. 
+- Fetch NSE symbols dynamically.
+- Fetch live fundamental data.
+- Compute an equal-weight portfolio based on your investment.
+- Visualize the portfolio using styled tables, interactive charts, and animations.
 
-**How It Works**
-- **Initial Setup:** Import libraries and load data (CSV or yfinance).
-- **Data Processing:** Sort by market capitalization.
-- **Allocation Calculation:** User enters investment; computes shares per stock for equal allocation.
-- **Results Visualization:** View summary tables of share purchases and allocations.
+Example Python usage snippet:
+After fetching and filtering top 50 stocks
 
----
+investment = get_investment_amount() # Prompts user
+portfolio_df = calculate_shares(portfolio_df, investment)
+display_portfolio_animated(portfolio_df)
 
-**Requirements**
-- Python 3.6+ (tested with Python 3.13.1)
-- pandas
-- numpy
-- yfinance
 
----
+## Advantages
 
-**Getting Started**
-- **Clone the repository and open Portfolio.ipynb in Jupyter.**
-- **Run the cells to load and process stock data.**
-- **Input total amount to allocate.**
-- **View recommended share counts and allocation breakdown.**
+- **Automated Data Updating:** No manual maintenance of stock ticker lists required.
+- **Real-time Market Data:** Ensures portfolio reflects current market conditions.
+- **Visual Richness:** Tables and charts make portfolio allocations easy to analyze.
+- **User Interaction:** Input validation and formatted results improve user experience.
+- **Extensible:** Easy to add other portfolio strategies or visualization features.
 
----
+## Known Issues
 
-**Example Usage**
-- **Load Nifty constituent stocks.**
-- **Enter investment (e.g., ₹1,00,000).**
-- **Script recommends shares per stock for optimal diversification.**
+- Data fetching may slow for large symbol sets.  
+- Requires stable internet for Yahoo Finance API connectivity.  
+- Planned features and improvements are ongoing.
 
----
+## Contributing
+- Contributions and suggestions are welcome!
+- Please open issues or pull requests for improvements, bug fixes, or new features.
 
-**Who Should Use This Project**
-- Finance students studying portfolio construction.
-- Investors seeking guided allocation strategies.
-- Researchers/professionals testing equal-weight methods on Indian market data.
+## Made with ❤️ for easy and dynamic NSE portfolio management by **Parth Nema**
 
----
 
-**Extending the Project**
-- Support weighting by market cap or volatility.
-- Integrate live price APIs.
-- Add portfolio rebalancing.
 
----
 
-**Acknowledgements**
-- yfinance for data
-- pandas and numpy for wrangling
-- JupyterLab for scripting
+
+
+
 
