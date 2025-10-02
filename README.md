@@ -8,12 +8,8 @@ An advanced Python project that builds an equal-weight portfolio using dynamic I
 - **Live Stock Fundamentals:** Retrieves updated prices, market caps, P/E ratios, dividend yields from Yahoo Finance.
 - **Market Cap Based Selection:** Selects top 50 stocks by market capitalization for portfolio inclusion.
 - **Equal Weight Allocation:** Efficient calculation of shares to buy for any user-specified investment amount.
-- **Enhanced Visualizations:**
-  
-  - Stylish DataFrame tables with color-coded key metrics.
-  - Interactive Plotly bar charts for share allocations.
-  - Animated matplotlib charts for share buy recommendations.
-  - 
+- **Enhanced Visualization:**
+  - Stylish DataFrame tables with color-coded key metrics.  
 - **User Friendly:** Validates user input and formats all financial numbers with Indian Rupee formatting and percentages.
 - **Notebook Ready:** Designed for smooth execution and display in Jupyter Notebooks.
 
