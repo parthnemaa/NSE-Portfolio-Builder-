@@ -254,7 +254,12 @@ This project is for **educational and research purposes only**. It is NOT invest
 
 The author assumes no liability for any financial losses resulting from the use of this analysis.
 
----
+## 📅 Version History
+
+**Version 1.0** - October 25, 2025
+- Initial release
+- Author: Parth Nema
+
 
 ## ⭐ Star This Repository
 
