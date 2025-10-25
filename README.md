@@ -1,4 +1,4 @@
-# 📊 NSE Portfolio Builder & Optimizer
+# 📊 Portfolio Builder & Optimizer
 
 > **A data-driven portfolio management system leveraging Modern Portfolio Theory to construct and optimize equity portfolios using NSE-listed stocks.**
 
